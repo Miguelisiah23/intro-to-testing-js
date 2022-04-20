@@ -20,3 +20,12 @@ function isEven(input) {
     }
     return false;
 }
+
+function isVowel(input) {
+   if (input === "a") {
+       return input === "a";
+   } else if (input === "A") {
+       return  input  === "A";
+   }
+   return false;
+}
