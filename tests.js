@@ -31,6 +31,18 @@ describe('sayHello', function () {
     it('should return a string saying "Hello, Pat!" to the passed in string of Pat', function () {
         expect(sayHello("Pat")).toBe("Hello, Pat!");
     });
+    it('should return "Hello, World!" when no inputs are passed in', function () {
+        expect(sayHello()).toBe("Hello, World!");
+    });
+    it('should return "Hello, World!" when true is passed in', function () {
+        expect(sayHello(true)).toBe("Hello, World!");
+    });
+    it('should return "Hello, World!" when false is passed in', function () {
+        expect(sayHello(false)).toBe("Hello, World!");
+    });
+    it('should return "Hello, World!" when input is null', function () {
+    expect(sayHello(null)).toBe("Hello, World!");
+    });
 });
 
 
